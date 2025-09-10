@@ -1,15 +1,14 @@
-
 from tkinter import *
 root=Tk()
 root.geometry("306x343")
 root.configure(bg="#FFFFFF")
 root.title("Calculator")
 root.resizable("False","False")
-lab=Entry(root,bg="#FFFFFF",font="Arial 22",width=18,bd=10)#"lightGrey
+lab=Entry(root,bg="#F5F3F3",font="Arial 22",width=18,bd=10)#"lightGrey
 lab.grid(row=0,column=0,columnspan=4)
 font1="Arial 20 bold"
-btn_color="#FAB7E0" #"grey"
-btn_tas="#C2C0C0"
+btn_color="#FEF3C7"#7C3AED"
+btn_tas="#F97316"#F3E8FF"
 def click(value):
    lab.insert(END,value)
 def clear():
@@ -57,7 +56,7 @@ def Equle():
 
       
             
-
+##Buttons
 b7=Button(root,text="7",font=font1,bg=btn_color,bd=10,height=1,width=3,command=lambda:click(7))
 b7.grid(row=1,column=0)
 b8=Button(root,text="8",font=font1,bg=btn_color,bd=10,height=1,width=3,command=lambda:click(8))
@@ -84,16 +83,11 @@ mult=Button(root,text="x",font=font1,bg=btn_tas,bd=10,height=1,width=3,command=l
 mult.grid(row=3,column=3)
 b0=Button(root,text="0",font=font1,bg=btn_color,bd=10,height=1,width=3,command=lambda:click(0))
 b0.grid(row=4,column=0)
-bClear=Button(root,text="C",font=font1,bg="#A3A2A2",bd=10,height=1,width=3,command=clear)
+bClear=Button(root,text="C",font=font1,bg="#F8AD77",bd=10,height=1,width=3,command=clear)
 bClear.grid(row=4,column=1)
-bEqule=Button(root,text="=",font=font1,bg="#C295BA",bd=10,height=1,width=3,command=Equle)
+bEqule=Button(root,text="=",font=font1,bg="#F8AD77",bd=10,height=1,width=3,command=Equle)
 bEqule.grid(row=4,column=2)
 bDivg=Button(root,text="/",font=font1,bg=btn_tas,bd=10,height=1,width=3,command=lambda:click('/'))
 bDivg.grid(row=4,column=3)
-
-
-
-
-
-
 root.mainloop()
+     
